@@ -39,11 +39,11 @@ def map_to_square(source_array)
   return new
 end
 
-def reduce_to_total(array, alpha = 0)
-  total_amount = alpha;
+def reduce_to_total(source_array, i = 0)
+  total_amount = i;
   counter = 0;
-  while counter < array.length do
-    total_amount += array[counter];
+  while counter < source_array.length do
+    total_amount += source_array[counter];
     counter = counter + 1;
   end
   return(total_amount);
